@@ -30,21 +30,21 @@ const CONTENT = {
         title: "Giant Ferris Wheel",
         category: "Extreme Rides",
         image:
-          "https://images.unsplash.com/photo-1473133669042-55aca0930f4c?auto=format&fit=crop&q=80&w=600",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJqeeQAPJ94fwHRnzq9XhFo7OFLkZ5Wzbyw&s"
       },
       {
         id: "l2",
         title: "Bumper Car Arena",
         category: "Fun Zone",
         image:
-          "https://images.unsplash.com/photo-1601633512803-ec137fc44474?auto=format&fit=crop&q=80&w=600",
+          "https://torq03.com/wp-content/uploads/2025/07/b6b7afb5dfdd0bd6c7ab22f2c0f64261876ba918.jpg"
       },
       {
         id: "l3",
         title: "Twist and Shout",
         category: "Land Rides",
         image:
-          "https://images.unsplash.com/photo-1561622539-dffbfc2008fd?auto=format&fit=crop&q=80&w=600",
+          "https://a-us.storyblok.com/f/1018389/2880x1620/78895a6ce6/twist-shout-hero-2880-x-1620.jpg"
       },
     ],
   },
@@ -59,21 +59,21 @@ const CONTENT = {
         title: "Aqua Splash",
         category: "Extreme Rides",
         image:
-          "https://images.unsplash.com/photo-1563220478-f604ec283627?auto=format&fit=crop&q=80&w=600",
+          "https://t3.ftcdn.net/jpg/03/63/18/52/360_F_363185208_TUCcLEeexguEFn3ywy65gTPyKHK6zZfI.jpg"
       },
       {
         id: "w2",
         title: "Wave Pool Paradise",
         category: "Relaxation",
         image:
-          "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=600",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHAbFQywZj9T6yRRl9tAtQrbD2FZmemX2pXQ&s",
       },
       {
         id: "w3",
         title: "Rapid River Raft",
         category: "Thrill Rides",
         image:
-          "https://images.unsplash.com/photo-1551103756-c4ea993f3503?auto=format&fit=crop&q=80&w=600",
+          "https://visitadirondacks.com/sites/default/files/styles/960x540/public/2023-04/ROOST%20Raft%20adkadventures1.jpg?itok=-lADTjj0"
       },
     ],
   },
@@ -88,21 +88,21 @@ const CONTENT = {
         title: "Sky Drop Tower",
         category: "Extreme Thrills",
         image:
-          "https://images.unsplash.com/photo-1545193544-312983719627?auto=format&fit=crop&q=80&w=600",
+          "https://www.intamin.com/wp-content/uploads/2019/09/IMG_4787_ret-1920x1280.jpg"
       },
       {
         id: "t2",
         title: "Vertical Loop Coaster",
         category: "Extreme Thrills",
         image:
-          "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&q=80&w=600",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwNa0kg6RoqDE8Ks0d22DapGUXFJctGY7R5A&s"
       },
       {
         id: "t3",
         title: "Aftershock Spin",
         category: "Intensity",
         image:
-          "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&q=80&w=600",
+          "https://media-cdn.tripadvisor.com/media/photo-s/05/da/d3/a9/silverwood-theme-park_rotated_90.jpg"
       },
     ],
   },
@@ -117,21 +117,21 @@ const CONTENT = {
         title: "Kiddies Wheel",
         category: "Kids Zone",
         image:
-          "https://images.unsplash.com/photo-1579624536968-38290ba238e8?auto=format&fit=crop&q=80&w=600",
+          "https://5.imimg.com/data5/SELLER/Default/2021/3/TQ/TN/PZ/67007676/baby-game-jhula.jpg"
       },
       {
         id: "k2",
         title: "Merry-Go-Round",
         category: "Kids Zone",
         image:
-          "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&q=80&w=600",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjbEaYlByHxy9eNvm2p6eQ64lbd5CZ1E1g9g&s"
       },
       {
         id: "k3",
         title: "Bumper Boats",
         category: "Kids Zone",
         image:
-          "https://images.unsplash.com/photo-1563220478-f604ec283627?auto=format&fit=crop&q=80&w=600",
+          "https://www.heatherton.co.uk/media/h50n5ui1/bumper-boats-3.jpg?width=1600&height=1200&v=1db605a83e90050&quality=75",
       },
     ],
   },
