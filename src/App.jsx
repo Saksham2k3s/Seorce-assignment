@@ -81,10 +81,10 @@ const AnimatedCarousel = ({ rides }) => {
   return (
     <div className="relative w-full h-full lg:px-4" ref={containerRef}>
       <div className="absolute -top-16 right-4 lg:right-0 flex gap-4 z-20">
-        <button onClick={prev} className="w-12 h-12 rounded-full bg-white border border-gray-100 text-[#A16207] flex items-center justify-center transition-all hover:bg-yellow-50 shadow-sm">
+        <button onClick={prev} className="w-12 h-12 cursor-pointer rounded-full bg-white border border-gray-100 text-[#A16207] flex items-center justify-center transition-all hover:bg-yellow-50 shadow-sm">
           <ChevronLeft size={24} />
         </button>
-        <button onClick={next} className="w-12 h-12 rounded-full bg-[#FDE047] text-[#A16207] flex items-center justify-center transition-all hover:bg-[#FACC15] shadow-md">
+        <button onClick={next} className="w-12 h-12 cursor-pointer rounded-full bg-[#FDE047] text-[#A16207] flex items-center justify-center transition-all hover:bg-[#FACC15] shadow-md">
           <ChevronRight size={24} />
         </button>
       </div>
@@ -154,7 +154,7 @@ export default function App() {
         <RideIconPath />
       </header>
 
-      <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[450px_1fr] gap-8 items-start pb-24">
+      <main className="mx-auto grid grid-cols-1 lg:grid-cols-[450px_1fr] gap-8 items-start pb-24">
         {/* Left Side: The Circle */}
         <section className="relative h-[700px] flex items-center justify-center">
           <div 
@@ -182,7 +182,7 @@ export default function App() {
                     left: `${x + 60}px`, top: `calc(50% + ${y}px)`,
                     transform: 'translate(-50%, -50%)'
                   }}
-                  className="group flex flex-col items-center z-30"
+                  className="group cursor-pointer flex flex-col items-center z-30"
                 >
                   <div className={`rounded-full flex items-center justify-center shadow-xl border-4 transition-all ${isActive ? 'w-40 h-40 bg-white border-[#5876F3]' : 'w-16 h-16 bg-[#5876F3] border-white'}`}>
                     <cat.icon size={isActive ? 70 : 24} className={isActive ? "text-yellow-500" : "text-white"} />
@@ -206,8 +206,8 @@ export default function App() {
               <span className="px-4 py-1 rounded-lg bg-indigo-600 text-white text-[10px] font-black">{CONTENT[activeCategory].count}</span>
             </div>
             <p className="text-gray-500 leading-relaxed font-medium">{CONTENT[activeCategory].description}</p>
-            <button className="flex items-center gap-4 px-10 py-5 rounded-2xl bg-[#1D2445] text-white font-black uppercase text-sm shadow-2xl">
-              Explore Full Map <ArrowUp size={20} className="rotate-45 text-yellow-400" />
+            <button className="flex items-center cursor-pointer gap-4 px-10 py-5 rounded-2xl bg-yellow-400 text-white font-black uppercase text-sm shadow-2xl">
+              Explore Full Map <ArrowUp size={20} className="rotate-45 text-[#1D2445]" />
             </button>
           </div>
         </section>
