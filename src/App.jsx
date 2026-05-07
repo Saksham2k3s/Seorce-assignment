@@ -156,43 +156,64 @@ export default function App() {
 
       <main className="mx-auto grid grid-cols-1 lg:grid-cols-[450px_1fr] gap-8 items-start pb-24">
         {/* Left Side: The Circle */}
-        <section className="relative h-[700px] flex items-center justify-center">
-          <div 
-            className="absolute rounded-full border-[75px] border-[#5876F3] opacity-10"
-            style={{ 
-              width: radius * 2, height: radius * 2, 
-              left: "-340px", 
-              clipPath: "polygon(50% 0, 100% 0, 100% 100%, 50% 100%)" 
-            }}
-          />
-          
-          <div className="relative w-full h-full">
-            {CATEGORIES.map((cat) => {
-              const isActive = activeCategory === cat.id;
-              const radian = (cat.angle * Math.PI) / 180;
-              const x = radius * Math.cos(radian);
-              const y = radius * Math.sin(radian);
+<section className="relative h-[700px] flex items-center justify-center">
+  {/* Circle */}
+  <div
+    className="absolute rounded-full border-[60px] border-[#5876F3]"
+    style={{
+      width: radius * 1.6,
+      height: radius * 1.6,
+      left: "-250px",
+      clipPath: "polygon(50% 0, 100% 0, 100% 100%, 50% 100%)",
+    }}
+  />
 
-              return (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
-                  style={{
-                    position: 'absolute',
-                    left: `${x + 60}px`, top: `calc(50% + ${y}px)`,
-                    transform: 'translate(-50%, -50%)'
-                  }}
-                  className="group cursor-pointer flex flex-col items-center z-30"
-                >
-                  <div className={`rounded-full flex items-center justify-center shadow-xl border-4 transition-all ${isActive ? 'w-40 h-40 bg-white border-[#5876F3]' : 'w-16 h-16 bg-[#5876F3] border-white'}`}>
-                    <cat.icon size={isActive ? 70 : 24} className={isActive ? "text-yellow-500" : "text-white"} />
-                  </div>
-                  {isActive && <p className="mt-4 font-black text-blue-900 uppercase">{cat.name}</p>}
-                </button>
-              );
-            })}
+  <div className="relative w-full h-full">
+    {CATEGORIES.map((cat) => {
+      const isActive = activeCategory === cat.id;
+
+      const adjustedRadius = radius * 0.78; // smaller radius
+
+      const radian = (cat.angle * Math.PI) / 180;
+
+      const x = adjustedRadius * Math.cos(radian);
+      const y = adjustedRadius * Math.sin(radian);
+
+      return (
+        <button
+          key={cat.id}
+          onClick={() => setActiveCategory(cat.id)}
+          style={{
+            position: "absolute",
+            left: `${x + 110}px`,
+            top: `calc(50% + ${y}px)`,
+            transform: "translate(-50%, -50%)",
+          }}
+          className="group cursor-pointer flex flex-col items-center z-30"
+        >
+          <div
+            className={`rounded-full flex items-center justify-center shadow-xl border-4 transition-all duration-300 ${
+              isActive
+                ? "w-32 h-32 bg-white border-[#5876F3]"
+                : "w-14 h-14 bg-[#5876F3] border-white"
+            }`}
+          >
+            <cat.icon
+              size={isActive ? 56 : 22}
+              className={isActive ? "text-yellow-500" : "text-white"}
+            />
           </div>
-        </section>
+
+          {isActive && (
+            <p className="mt-3 font-black text-blue-900 uppercase">
+              {cat.name}
+            </p>
+          )}
+        </button>
+      );
+    })}
+  </div>
+</section>
 
         {/* Right Side: Content */}
         <section className="flex flex-col gap-12 pt-8 px-6">
